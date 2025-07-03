@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./component/LandingPage/LandingPage";
 import Login from "./component/Auth/login";
 import SignUp from "./component/Auth/signup";
-import Test from "./component/profile";
-import Navbar from "./component/Navbar/navbar";
+import Navbar from "./component/Navbar/Navbar";
 import Dashboard from "./component/dashboard/dashboard";
 import { ToastContainer } from "react-toastify";
 import UserContextProvider from "./Context/contextProvider";
@@ -24,7 +23,6 @@ function App() {
             <Route path="/login" element={<Login></Login>}></Route>
             <Route path="/signup" element={<SignUp></SignUp>}></Route>
             <Route path = "/tasks" element = {<Tasks></Tasks>}></Route>
-            <Route path="/test" element={<Test></Test>}></Route>
           </Routes>
         </UserContextProvider>
       </Router>
