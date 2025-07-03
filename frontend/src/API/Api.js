@@ -4,7 +4,7 @@ const httpURL = 'https://deadlineai-b.onrender.com';
 
 export const APILoginForm = async (user) => {
     try{
-    const response = await axios.post(`${httpURL}/auth/login` ,  { user  , withCredentials: true});
+    const response = await axios.post(`${httpURL}/auth/login` , user ,   {  withCredentials: true});
      return response;
     }
     catch(error){
