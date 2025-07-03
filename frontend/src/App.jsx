@@ -4,7 +4,7 @@ import LandingPage from "./component/LandingPage/LandingPage";
 import Login from "./component/Auth/login";
 import SignUp from "./component/Auth/signup";
 import Navbar from "./component/Navbar/Navbar";
-import Dashboard from "./component/dashboard/dashboard";
+import Dashboard from "./component/Dashboard/Dashboard";
 import { ToastContainer } from "react-toastify";
 import UserContextProvider from "./Context/contextProvider";
 import Tasks from "./component/Tasks/Tasks";
