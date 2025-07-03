@@ -1,0 +1,287 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 1.5rem;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  z-index: 100;
+  border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+}
+
+.nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.logoIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(79, 70, 229, 0.1);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.logo:hover .logoIconWrapper {
+  background-color: rgba(79, 70, 229, 0.15);
+}
+
+.logoIcon {
+  color: #4f46e5;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .logoIcon {
+  transform: rotate(-10deg);
+}
+
+.logoText {
+  transition: color 0.3s ease;
+}
+
+.logo:hover .logoText {
+  color: #4f46e5;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4b5563;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  position: relative;
+}
+
+.navLink:hover {
+  color: #4f46e5;
+  background: rgba(79, 70, 229, 0.05);
+}
+
+/* Remove the pseudo-element that was causing blinking */
+.navLink::after {
+  content: none;
+}
+
+.navLinkIcon {
+  transition: transform 0.2s ease;
+}
+
+.navLink:hover .navLinkIcon {
+  transform: translateY(-2px);
+}
+
+.userMenu {
+  position: relative;
+  margin-left: 0.5rem;
+}
+
+.userButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px;
+  cursor: pointer;
+  color: #374151;
+  font-weight: 500;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.userButton:hover {
+  background: #e5e7eb;
+  border-color: #d1d5db;
+  color: #4f46e5;
+}
+
+.userIcon {
+  transition: transform 0.2s ease;
+}
+
+.userButton:hover .userIcon {
+  transform: scale(1.1);
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 0.75rem);
+  right: 0;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  min-width: 240px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+  border: 1px solid rgba(229, 231, 235, 0.8);
+  padding: 0.5rem;
+  z-index: 200;
+}
+
+.dropdown::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  right: 20px;
+  width: 12px;
+  height: 12px;
+  background: white;
+  transform: rotate(45deg);
+  border-left: 1px solid rgba(229, 231, 235, 0.8);
+  border-top: 1px solid rgba(229, 231, 235, 0.8);
+}
+
+.dropdownVisible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: #4b5563;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background: rgba(79, 70, 229, 0.05);
+  color: #4f46e5;
+}
+
+/* Remove the pseudo-element that was causing blinking */
+.dropdownItem::before {
+  content: none;
+}
+
+.dropdownIcon {
+  transition: transform 0.2s ease;
+}
+
+.dropdownItem:hover .dropdownIcon {
+  transform: translateX(3px);
+}
+
+.mobileMenuButton {
+  display: none;
+  background: none;
+  border: none;
+  color: #4b5563;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.mobileMenuButton:hover {
+  background: rgba(79, 70, 229, 0.05);
+  color: #4f46e5;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 1rem;
+  }
+  
+  .mobileMenuButton {
+    display: block;
+  }
+
+  .navItems {
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 0.75rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+    border-top: 1px solid rgba(229, 231, 235, 0.5);
+    z-index: 90;
+  }
+
+  .navItemsVisible {
+    transform: translateX(0);
+  }
+
+  .navLink {
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+
+  .userMenu {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .userButton {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .dropdown {
+    position: static;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    margin-top: 0.75rem;
+    width: 100%;
+    border: 1px solid rgba(229, 231, 235, 0.5);
+    background: #f9fafb;
+    padding: 0.5rem;
+  }
+  
+  .dropdown::before {
+    display: none;
+  }
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+}

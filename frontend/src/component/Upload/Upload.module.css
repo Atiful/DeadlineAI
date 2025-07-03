@@ -1,0 +1,158 @@
+.uploadContainer {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    margin-top: 7rem !important;
+
+
+  }
+  
+  .uploadBox {
+    border: 2px dashed #4f46e5;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: rgba(79, 70, 229, 0.05);
+  }
+  
+  .uploadBox:hover {
+    background: rgba(79, 70, 229, 0.1);
+  }
+  
+  .uploadIcon {
+    color: #4f46e5;
+    margin-bottom: 1rem;
+  }
+  
+  .uploadText {
+    font-size: 1.1rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+  }
+  
+  .uploadInput {
+    display: none;
+  }
+  
+  .textArea {
+    width: 100%;
+    min-height: 150px;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    resize: vertical;
+    font-family: inherit;
+  }
+  
+  .submitButton {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background: #4338ca;
+  }
+  
+  .submitButton:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem !important;
+  }
+  
+  .tab {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    color: #6b7280;
+    transition: all 0.3s ease;
+  }
+  
+  .tabActive {
+    color: #4f46e5;
+    border-bottom-color: #4f46e5;
+  }
+  
+  @media (max-width: 640px) {
+    .uploadContainer {
+      padding: 1rem;
+    }
+    
+    .uploadBox {
+      padding: 1rem;
+    }
+  }
+
+  .loaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .loader {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  .pulseBackground {
+    animation: pulseBackground 2s ease-in-out infinite;
+    background-image: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    background-size: 200% 200%;
+  }
+  
+  .progressBar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.7);
+    transition: width 0.3s ease;
+    border-radius: 0 2px 2px 0;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes pulseBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .submitButton {
+    position: relative;
+    overflow: hidden;
+  }

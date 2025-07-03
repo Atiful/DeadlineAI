@@ -1,0 +1,18 @@
+*{
+  box-sizing: border-box !important;
+}
+
+a{
+  text-decoration: none;
+  color : black;
+}
+
+:root{
+  --primary-color-dark-700 : #3674B5;
+  --primary-color-dark-500 :#578FCA;
+  --primary-color-dark-300 :#A1E3F9;
+  --primary-color-dark-100 :#D1F8EF;
+  --primary-main1 : #314755;
+  --primary-main2 : #26a0da;
+}
+
