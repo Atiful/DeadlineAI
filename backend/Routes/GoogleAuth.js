@@ -8,7 +8,7 @@ const httpUrlFrontend = "http://localhost:5173";
 const router = express.Router();
 
 
-
+// paspoet js
 passport.use(
     new GoogleStrategy(
       {
