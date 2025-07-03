@@ -2,8 +2,8 @@ const express = require("express");
 const user = require("../Models/user");
 const passport = require("passport");
 const GoogleStrategy = require("passport-google-oauth2").Strategy;
-const httpUrl = "http://localhost:3000";
-// const httpUrl = 'https://deadlineai-b.onrender.com';
+// const httpUrl = "http://localhost:3000";
+const httpUrl = 'https://deadlineai-b.onrender.com';
 // const httpUrlFrontend = "http://localhost:5173";
 const httpUrlFrontend = "https://deadlineai-f.onrender.com";
 const router = express.Router();
@@ -59,7 +59,6 @@ router.get('/callback', (req, res, next) => {
 
     req.logIn(user, (err) => {
       if (err) return next(err);
-
       req.session.accessToken = user._accessToken;
       req.session.refreshTokon = user._refreshTokon;
 
