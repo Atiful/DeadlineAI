@@ -42,7 +42,10 @@ app.use(
 app.use(
   cors({
     credentials: true,
-    origin: ["http://localhost:5173" , "http://localhost:3000" , "https://deadlineai-b.onrender.com"],
+    origin: ["http://localhost:5173" , 
+      "http://localhost:3000" , 
+      "https://deadlineai-b.onrender.com" , 
+      "https://deadlineai-f.onrender.com"],
     
   })
 );
