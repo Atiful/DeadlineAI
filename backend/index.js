@@ -29,7 +29,7 @@ app.use(
     cookie: {
       maxAge: 1000 * 60 * 60 * 24 * 365 * 10, // 10 year
       secure: true,
-      httpOnly: false,
+      // httpOnly: false,
       sameSite : 'none',
     },
     store: MongoStore.create({
