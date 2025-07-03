@@ -28,19 +28,21 @@ app.use(
     saveUninitialized: false,
     cookie: {
       maxAge: 1000 * 60 * 60 * 24 * 365 * 10, // 10 year
-      secure: false,
+      secure: true,
       httpOnly: true,
+      sameSite : 'none',
     },
     store: MongoStore.create({
       mongoUrl: mongoDBurl,
       collection: "sessions",
       ttl: 60 * 60 * 24 * 365 * 10,
     }),
+    s
   })
 );
 app.use(
   cors({
-    origin: ["http://localhost:5173" , "http://localhost:3000"],
+    origin: ["http://localhost:5173" , "http://localhost:3000" , "https://deadlineai-b.onrender.com"],
     credentials: true,
   })
 );
