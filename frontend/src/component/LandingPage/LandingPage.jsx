@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Navbar from "../Navbar/navbar";
 
 function LandingPage() {
   return (
