@@ -3,7 +3,7 @@ const user = require("../Models/user");
 const passport = require("passport");
 const GoogleStrategy = require("passport-google-oauth2").Strategy;
 // const httpUrl = "http://localhost:3000";
-const httpURL = 'https://deadlineai-b.onrender.com';
+const httpUrl = 'https://deadlineai-b.onrender.com';
 const httpUrlFrontend = "http://localhost:5173";
 const router = express.Router();
 
