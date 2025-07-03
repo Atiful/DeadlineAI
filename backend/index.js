@@ -28,9 +28,15 @@ app.use(
     saveUninitialized: false,
     cookie: {
       maxAge: 1000 * 60 * 60 * 24 * 365 * 10, // 10 year
+
+      // when deployed
       secure: true,
       httpOnly: false,
       sameSite : 'none',
+
+      // secure : false ,
+      // httpOnly : true,
+      // sameSite : 'lax',
     },
     store: MongoStore.create({
       mongoUrl: mongoDBurl,
