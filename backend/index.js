@@ -37,7 +37,6 @@ app.use(
       collection: "sessions",
       ttl: 60 * 60 * 24 * 365 * 10,
     }),
-    s
   })
 );
 app.use(
