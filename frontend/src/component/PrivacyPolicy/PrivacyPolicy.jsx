@@ -25,6 +25,7 @@ const PrivacyPolicy = () => {
       </p>
       <ul>
         <li>Identify you and personalize your experience on DeadlineAI</li>
+        <li>We have Access your Gender also but we dont use it in our application</li>
         <li>Display your name and profile photo within the app</li>
         <li>Create and delete Google Calendar events related to your tracked deadlines</li>
       </ul>
