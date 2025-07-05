@@ -44,7 +44,7 @@ passport.use(
     '/',
     passport.authenticate('google', 
       { scope: 
-        ['email', 'profile' , 'https://www.googleapis.com/auth/calendar'] , 
+        ['email', 'profile' , 'https://www.googleapis.com/auth/calendar.events'] , 
       accessType: 'offline',   
        prompt: 'consent'
      })
