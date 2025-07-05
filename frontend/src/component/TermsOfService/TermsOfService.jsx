@@ -17,7 +17,7 @@ const TermsOfService = () => {
 
       <h2>3. Permissions and Access</h2>
       <p>
-        By signing in with Google, you grant DeadlineAI access to your Google profile information (name, email, and profile picture) and allow the app to create and delete Google Calendar events that it manages.
+        By signing in with Google, you grant DeadlineAI access to your Google profile information (name, email, and profile picture , Gender) and allow the app to create and delete Google Calendar events that it manages.
       </p>
 
       <h2>4. User Responsibilities</h2>
@@ -33,7 +33,7 @@ const TermsOfService = () => {
 
       <h2>6. Modifications</h2>
       <p>
-        We may update these Terms from time to time. Continued use of the app means you accept the new terms.
+        We may update these Terms from time to time and will notify you when modified.
       </p>
 
       <p>If you have questions, contact us at <strong>mdatifulhaque26@gmail.com</strong>.</p>
