@@ -8,6 +8,8 @@ import Dashboard from "./component/Dashboard/Dashboard";
 import { ToastContainer } from "react-toastify";
 import UserContextProvider from "./Context/contextProvider";
 import Tasks from "./component/Tasks/Tasks";
+import PrivacyPolicy from "./component/PrivacyPolicy/PrivacyPolicy";
+import TermsOfService from "./component/TermsOfService/TermsOfService";
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
             <Route path="/login" element={<Login></Login>}></Route>
             <Route path="/signup" element={<SignUp></SignUp>}></Route>
             <Route path = "/tasks" element = {<Tasks></Tasks>}></Route>
+            <Route path = "/privacyPolicy" element = {<PrivacyPolicy></PrivacyPolicy>}></Route>
+            <Route path = "/TermsOfService" element = {<TermsOfService></TermsOfService>}></Route>
           </Routes>
         </UserContextProvider>
       </Router>
