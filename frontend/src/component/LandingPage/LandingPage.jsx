@@ -264,6 +264,8 @@ function LandingPage() {
       
               <a href="www.linkedin.com/in/atiful-haque" style={{ color: "#D4C9BE" }}><i className="ri-linkedin-box-fill"></i></a>
               <a href="https://github.com/Atiful" style={{ color: "#D4C9BE" }}><i className="ri-github-fill"></i></a>
+             <Link to = "/privacyPolicy" style={{color : "#D4C9BE"}}>Privacy Policy</Link>
+             <Link to = "/TermsOfService" style={{color : "#D4C9BE"}}>Terms of Service</Link>
             </div>
           </div>
         </div>
