@@ -46,7 +46,7 @@ app.use(
     origin: ["http://localhost:5173" , 
       "http://localhost:3000" , 
       "https://deadlineai-b.onrender.com" , 
-      "https://deadlineai-f.onrender.com"],
+      "https://deadlineai.online"],
     
   })
 );

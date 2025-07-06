@@ -5,7 +5,7 @@ const GoogleStrategy = require("passport-google-oauth2").Strategy;
 // const httpUrl = "http://localhost:3000";
 const httpUrl = 'https://deadlineai-b.onrender.com';
 // const httpUrlFrontend = "http://localhost:5173";
-const httpUrlFrontend = "https://deadlineai-f.onrender.com";
+const httpUrlFrontend = "https://deadlineai.online";
 const router = express.Router();
 
 
