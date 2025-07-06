@@ -13,6 +13,14 @@ import TermsOfService from "./component/TermsOfService/TermsOfService";
 
 
 function App() {
+
+  const hostname = window.location.hostname;
+
+if (hostname === "deadlineai-f.onrender.com") {
+  window.location.href = "https://deadlineai.online";
+  return null;
+}
+
   return (
     <>
       <Router>
