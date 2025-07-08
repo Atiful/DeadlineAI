@@ -56,7 +56,7 @@ const PrivacyPolicy = () => {
 <p>Our app DeadlineAI accesses certain user data from Google Workspace APIs (such as Calendar API) to provide core features like event tracking and scheduling reminders.</p>
 <p>We do <strong>NOT</strong> use any user data to develop, improve, or train generalized AI or machine learning models.</p>
 <p>We only extract the relevant information necessary to serve user-facing features, such as reading calendar events for deadline management or inserting reminder events.</p>
-<p>All data usage complies with the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" className={styles.atag}>Google API Services User Data Policy</a>, including the <a className={styles.atag} href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes" target="_blank">Limited Use requirements</a>.</p>
+<p>All data usage complies with the <a href="https://developers.google.com/workspace/workspace-api-user-data-developer-policy" target="_blank" className={styles.atag}> Workspace API user data and developer policy</a>, including the <a className={styles.atag} href="https://developers.google.com/workspace/workspace-api-user-data-developer-policy#limited-use" target="_blank">Limited use of user data requirement</a>.</p>
 
 
       <h2>Data Security</h2>
