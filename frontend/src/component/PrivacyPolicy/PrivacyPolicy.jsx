@@ -52,16 +52,12 @@ const PrivacyPolicy = () => {
         If you would like to delete your data, please contact us at <strong>mdatifulhaque26@gmail.com</strong>. We will delete all relevant stored data within 72 hours of receiving your request.
       </p>
 
-      <h2>Limited Use Disclosure</h2>
-      <p>
-        DeadlineAI complies with Google's API Services User Data Policy, including the <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes" target="_blank" rel="noopener noreferrer">Limited Use requirements</a>.
-      </p>
-      <p>
-        We only access, use, and store Google user data to provide and improve user-facing features. We do not use this data for advertising or share it with third parties.
-      </p>
-      <p>
-        <strong>We confirm that DeadlineAI adheres to the Google API Services User Data Policy and the Limited Use requirements outlined by Google.</strong>
-      </p>
+    <h2>Google API Data Use Disclosure</h2>
+<p>Our app DeadlineAI accesses certain user data from Google Workspace APIs (such as Calendar API) to provide core features like event tracking and scheduling reminders.</p>
+<p>We do <strong>NOT</strong> use any user data to develop, improve, or train generalized AI or machine learning models.</p>
+<p>We only extract the relevant information necessary to serve user-facing features, such as reading calendar events for deadline management or inserting reminder events.</p>
+<p>All data usage complies with the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" className={styles.atag}>Google API Services User Data Policy</a>, including the <a className={styles.atag} href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes" target="_blank">Limited Use requirements</a>.</p>
+
 
       <h2>Data Security</h2>
       <p>
